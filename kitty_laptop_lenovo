@@ -1,0 +1,113 @@
+foreground 			#DBDBDB
+background 			#282c34
+
+font_size 			12
+font_family      	JetBrainsMono NF Light
+italic_font      	JetBrainsMono NF Light Italic
+bold_font        	auto
+bold_italic_font 	auto
+
+disable_ligatures 	never
+
+cursor_shape 		block
+cursor_blink_interval -1
+
+shell_integration  no-cursor
+
+
+
+wheel_scroll_multiplier 5.0
+
+url_prefixes 		file ftp ftps gemini git gopher http https irc ircs kitty mailto news sftp ssh
+detect_urls 		yes
+
+
+remember_window_size  	yes
+initial_window_width  	113c
+initial_window_height 	28c
+#initial_window_width  640
+#initial_window_height 400
+window_padding_width 	15
+
+
+confirm_os_window_close 1
+
+
+copy_on_select 			yes
+scrollback_lines 		2000
+strip_trailing_spaces 	smart
+select_by_word_characters @-./_~?&=%+#
+
+click_interval 			-1.0
+
+
+clear_all_mouse_actions yes
+mouse_map 				right release ungrabbed paste_from_selection
+mouse_map 				left doublepress ungrabbed mouse_selection word
+mouse_map 				left triplepress ungrabbed mouse_selection line
+
+
+tab_bar_edge 			top
+tab_bar_align 			left
+#tab_bar_style       	slant
+#tab_separator 			" ┇"
+tab_separator       	" "
+
+
+tab_title_template  	" {index} {title} "
+
+#tab_title_template 		"{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{title}"
+tab_title_template 		"{tab.active_wd}{index}"
+
+tab_bar_background 		#9e9694
+
+tab_bar_margin_width 	0.0
+tab_bar_margin_height 	0.0 0.0
+
+active_tab_background   #0187ce
+active_tab_foreground   #2c363c
+active_tab_font_style   bold-italic
+inactive_tab_foreground #75715e
+inactive_tab_background #272822
+inactive_tab_font_style normal
+
+
+map ctrl+shift+c        copy_to_clipboard
+map ctrl+shift+v        paste_from_clipboard
+map shift+insert        paste_from_clipboard
+
+# Miscellaneous
+map ctrl+shift+up      increase_font_size
+map ctrl+shift+down    decrease_font_size
+map ctrl+shift+backspace restore_font_size
+
+
+selection_foreground #000000
+selection_background #fffacd
+
+
+#: Increase font size
+map ctrl+equal  change_font_size all +2.0
+map ctrl+plus   change_font_size all +2.0
+map ctrl+kp_add change_font_size all +2.0
+
+
+#: Decrease font size
+map ctrl+minus       change_font_size all -2.0
+map ctrl+kp_subtract change_font_size all -2.0
+
+#: Reset font size
+map ctrl+KP_MULTIPLY change_font_size all 0
+
+map f11 toggle_fullscreen
+
+
+# The value of the TERM environment variable to set
+#term    xterm-kitty
+term xterm-256color
+show_hyperlink_targets yes
+
+
+
+mouse_map left press ungrabbed mouse_selection normal
+
