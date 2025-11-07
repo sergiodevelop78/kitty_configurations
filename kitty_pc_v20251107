@@ -99,7 +99,7 @@ mouse_map left press ungrabbed mouse_selection normal
 
 
 map ctrl+n new_os_window
-map ctrl+w close_tab
+map ctrl+shift+w close_tab
 map ctrl+t new_tab
 
 map ctrl+shift+c        copy_to_clipboard
