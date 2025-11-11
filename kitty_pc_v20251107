@@ -7,6 +7,8 @@ background			#2c2c2c
 selection_foreground #000000
 selection_background #fffacd
 
+# turn off the bell in Kitty 
+enable_audio_bell no
 
 font_size 			12.0
 font_family      	JetBrains Mono NL Ligth
