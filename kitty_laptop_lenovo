@@ -7,6 +7,9 @@ italic_font      	JetBrainsMono NF Light Italic
 bold_font        	auto
 bold_italic_font 	auto
 
+# turn off the bell in Kitty 
+enable_audio_bell no
+
 disable_ligatures 	never
 
 cursor_shape 		block
